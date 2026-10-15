@@ -36,16 +36,16 @@ export function Contact() {
 
   const faqs = [
     {
-      q: "What types of projects do you take on?",
-      a: "I work on full-stack web applications, SaaS MVPs, cloud migrations, performance optimization audits, and AI workflow integrations."
+      q: "What types of services do you offer?",
+      a: "I provide end-to-end website development, cross-platform mobile apps (iOS & Android), custom UI/UX design, and proactive website management (maintenance, speed optimization & SEO)."
     },
     {
-      q: "Are you open to full-time or contract work?",
-      a: "Yes! I am open to high-impact full-time engineering roles, as well as select contract architecture and design sprint projects."
+      q: "How fast can you get my website or app ready?",
+      a: "My priority is rapid execution! Modern business websites can often be ready in just a few days, while full-scale web platforms or mobile apps typically take 1 to 3 weeks."
     },
     {
-      q: "What is your usual turnaround time for an MVP?",
-      a: "Depending on scope, a production-grade MVP typically takes 2 to 6 weeks from initial architecture to live deployment."
+      q: "Are you open to full-time remote roles or freelance contracts?",
+      a: "Yes! Based in Türkiye, I work seamlessly with international clients across all time zones on both freelance contracts and full-time remote positions."
     }
   ];
 

@@ -20,12 +20,12 @@ export function Footer() {
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <div className="flex items-center gap-2 font-bold text-lg text-slate-100">
               <span className="w-7 h-7 rounded-lg bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-xs text-white font-extrabold">
-                AM
+                {portfolioData.personal.name.split(" ").map((n) => n[0]).join("")}
               </span>
               <span>{portfolioData.personal.name}</span>
             </div>
             <p className="text-xs text-slate-400 mt-1 max-w-sm">
-              {portfolioData.personal.role} · Building modern web experiences and resilient cloud backends.
+              {portfolioData.personal.role} · {portfolioData.personal.secondaryRole}
             </p>
           </div>
 

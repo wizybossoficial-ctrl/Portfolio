@@ -136,7 +136,7 @@ export function Hero() {
                 </div>
                 <div className="flex items-center gap-1.5 text-xs text-slate-400 font-mono">
                   <Terminal className="w-3.5 h-3.5 text-cyan-400" />
-                  <span>developer@alex-macbook ~</span>
+                  <span>developer@jason ~</span>
                 </div>
                 <div className="w-8" />
               </div>
@@ -146,15 +146,14 @@ export function Hero() {
                 <div>
                   <span className="text-emerald-400">➜</span>{" "}
                   <span className="text-cyan-400">~/profile</span>{" "}
-                  <span className="text-slate-300">cat skills.json</span>
+                  <span className="text-slate-300">cat developer.json</span>
                 </div>
                 <div className="text-slate-300 bg-slate-950/60 p-3 rounded-lg border border-slate-800 font-mono text-xs overflow-x-auto">
                   <pre>{`{
-  "focus": "Full-Stack & Cloud Architecture",
-  "frontend": ["Next.js", "React 19", "Tailwind CSS"],
-  "backend": ["Node.js", "Python FastAPI", "PostgreSQL"],
-  "cloud": ["Docker", "AWS", "Turborepo"],
-  "status": "ready_to_deploy"
+  "name": "Jason Adelmo",
+  "services": ["Website Development", "Mobile Apps", "Website Design", "Website Management"],
+  "turnaround": "ready_in_a_blink",
+  "availability": "open_for_projects"
 }`}</pre>
                 </div>
                 <div className="pt-1">
@@ -164,7 +163,7 @@ export function Hero() {
                 </div>
                 <div className="flex items-center gap-2 text-emerald-400 text-xs">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>Lighthouse: 99 | Clean Architecture | Zero TS Errors</span>
+                  <span>100% Client Satisfaction | Blink Turnaround | Zero Bugs</span>
                 </div>
               </div>
             </div>

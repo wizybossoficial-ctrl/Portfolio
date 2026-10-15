@@ -11,10 +11,7 @@ export function Projects() {
 
   const categories = [
     "All",
-    "Full Stack",
-    "AI / Machine Learning",
-    "Frontend",
-    "DevOps / Cloud"
+    ...Array.from(new Set(portfolioData.projects.map((p) => p.category)))
   ];
 
   const filteredProjects = activeCategory === "All"
@@ -32,10 +29,10 @@ export function Projects() {
             <span>Featured Work</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-100">
-            Selected Projects & Engineering Case Studies
+            Selected Websites, Apps & Client Solutions
           </h2>
           <p className="text-slate-400 text-base max-w-xl mt-3">
-            A showcase of production-ready systems, developer tools, and intuitive web applications built from scratch.
+            A showcase of high-speed websites, responsive mobile apps, and custom web management platforms delivered in record time.
           </p>
           <div className="w-16 h-1 bg-gradient-to-r from-violet-500 to-pink-500 rounded-full mt-4" />
         </div>

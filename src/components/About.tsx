@@ -9,26 +9,26 @@ export function About() {
   const corePillars = [
     {
       icon: Zap,
-      title: "Performance by Default",
-      desc: "Obsessed with fast initial loads, 60fps animations, optimized database queries, and 99+ Core Web Vitals.",
+      title: "Blink-of-an-Eye Turnaround",
+      desc: "Get your website or mobile app designed, developed, and deployed in record time without cutting corners.",
       color: "text-amber-400 bg-amber-400/10 border-amber-400/20"
     },
     {
       icon: Layout,
-      title: "Intuitive Product UX",
-      desc: "Bridging the gap between design vision and technical implementation. Crafting accessible, human interfaces.",
+      title: "Pixel-Perfect Web & App UX",
+      desc: "Bridging creative vision and intuitive interaction. Beautiful, accessible interfaces that look stunning on any screen.",
       color: "text-cyan-400 bg-cyan-400/10 border-cyan-400/20"
     },
     {
       icon: ShieldCheck,
-      title: "Resilient Architecture",
-      desc: "Strict type-safety, modular decoupled boundaries, automated unit/E2E test suites, and fail-safe error handling.",
+      title: "Proactive Website Management",
+      desc: "Reliable maintenance, uptime monitoring, security hardening, domain/SSL configurations, and speed optimization.",
       color: "text-emerald-400 bg-emerald-400/10 border-emerald-400/20"
     },
     {
       icon: Cpu,
-      title: "Modern AI & Cloud",
-      desc: "Leveraging state-of-the-art LLMs, vector search, edge computing, and serverless infrastructure to build smart tools.",
+      title: "Cross-Platform Engineering",
+      desc: "Proficient in Next.js, React, and React Native for fluid experiences across web browsers, iOS, and Android.",
       color: "text-purple-400 bg-purple-400/10 border-purple-400/20"
     }
   ];
@@ -81,7 +81,7 @@ export function About() {
                   </div>
                   <div>
                     <div className="text-xs text-slate-500 font-medium">Timezone</div>
-                    <div className="text-sm font-semibold text-slate-200">UTC-7 (Pacific) / Flexible</div>
+                    <div className="text-sm font-semibold text-slate-200">UTC+3 (Türkiye) / Remote Worldwide</div>
                   </div>
                 </div>
 
@@ -91,7 +91,7 @@ export function About() {
                   </div>
                   <div>
                     <div className="text-xs text-slate-500 font-medium">Fuel</div>
-                    <div className="text-sm font-semibold text-slate-200">Espresso & Curiosity</div>
+                    <div className="text-sm font-semibold text-slate-200">Turkish Coffee & Rapid Delivery</div>
                   </div>
                 </div>
 
@@ -100,8 +100,8 @@ export function About() {
                     <Sparkles className="w-4 h-4" />
                   </div>
                   <div>
-                    <div className="text-xs text-slate-500 font-medium">Current Obsession</div>
-                    <div className="text-sm font-semibold text-slate-200">AI Agents & Turbopack</div>
+                    <div className="text-xs text-slate-500 font-medium">Current Focus</div>
+                    <div className="text-sm font-semibold text-slate-200">Websites, Apps & Management</div>
                   </div>
                 </div>
               </div>

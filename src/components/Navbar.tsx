@@ -40,7 +40,7 @@ export function Navbar() {
           className="group flex items-center gap-2.5 font-bold text-lg tracking-tight transition"
         >
           <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-600 to-pink-500 flex items-center justify-center text-white font-extrabold shadow-lg shadow-indigo-500/25 group-hover:scale-105 transition-transform">
-            AM
+            {portfolioData.personal.name.split(" ").map((n) => n[0]).join("")}
           </div>
           <div className="flex flex-col">
             <span className="font-semibold text-slate-100 group-hover:text-cyan-400 transition-colors leading-tight">

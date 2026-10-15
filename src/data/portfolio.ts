@@ -4,7 +4,7 @@ export interface Project {
   tagline: string;
   description: string;
   longDescription?: string;
-  category: 'Full Stack' | 'Frontend' | 'AI / Machine Learning' | 'DevOps / Cloud';
+  category: 'Web Development' | 'Mobile Apps' | 'Website Design' | 'Website Management';
   tags: string[];
   metrics?: string;
   liveUrl?: string;
@@ -61,152 +61,153 @@ export interface PortfolioData {
 
 export const portfolioData: PortfolioData = {
   personal: {
-    name: "Alex Morgan",
-    role: "Senior Full-Stack Engineer",
-    secondaryRole: "UI/UX & Cloud Architect",
-    bio: "Passionate about building scalable web applications, robust cloud microservices, and elegant user experiences that bridge design with rock-solid engineering.",
+    name: "Jason Adelmo",
+    role: "Web & Mobile App Developer",
+    secondaryRole: "Website Design & Management Specialist",
+    bio: "Hi, my name is Jason Adelmo. I am a WEB and APP developer. Contact me and get your website or app ready in a blink of an eye.",
     detailedBio: [
-      "I'm a software engineer with over 6 years of experience transforming complex ideas into intuitive, production-ready software. I specialize in the TypeScript ecosystem, modern React/Next.js architectures, and distributed backend systems.",
-      "Throughout my career, I've designed platforms serving millions of monthly active users, led engineering migrations to cloud-native microservices, and mentored dozens of developers.",
-      "When I'm not coding, you can find me contributing to open-source software, writing technical articles, exploring generative AI, or brewing the perfect cup of pour-over coffee."
+      "I'm a dedicated web and mobile app developer with 3 years of hands-on experience building lightning-fast, high-converting websites and modern mobile solutions.",
+      "Based in Türkiye and collaborating with clients remotely around the world, I handle the full digital spectrum: from intuitive UI/UX design and responsive web engineering to cross-platform mobile apps and proactive website management.",
+      "Whether you need a brand-new website from scratch, a sleek mobile app, or ongoing performance tuning and maintenance, I deliver polished, production-ready results in the blink of an eye."
     ],
-    location: "San Francisco, CA (Open to Remote)",
-    availability: "Available for Q4 contracts & full-time roles",
-    yearsOfExperience: "6+",
-    projectsCompleted: "45+",
-    satisfactionRate: "99.8%",
-    email: "alex.morgan.dev@example.com",
+    location: "Lives in Türkiye (Remote Worldwide)",
+    availability: "Open to full-time roles & freelance contracts",
+    yearsOfExperience: "3",
+    projectsCompleted: "9+",
+    satisfactionRate: "100%",
+    email: "jasonadelmoura@gmail.com",
     github: "https://github.com",
     linkedin: "https://linkedin.com",
     twitter: "https://x.com"
   },
   skills: [
     {
-      title: "Frontend Engineering",
+      title: "Website Development",
       skills: [
-        { name: "React 19 / Next.js", level: "Expert" },
-        { name: "TypeScript", level: "Expert" },
-        { name: "Tailwind CSS & Radix", level: "Expert" },
-        { name: "State Management (Zustand, Redux)", level: "Advanced" },
-        { name: "Web Performance & Core Web Vitals", level: "Advanced" },
-        { name: "Responsive Design & A11y", level: "Expert" }
+        { name: "Next.js & React 19", level: "Expert" },
+        { name: "HTML5, Modern CSS & Vanilla JS", level: "Expert" },
+        { name: "TypeScript", level: "Advanced" },
+        { name: "Tailwind CSS & Responsive UI", level: "Expert" },
+        { name: "REST APIs & Backend Integration", level: "Advanced" },
+        { name: "Web Performance & Core Web Vitals", level: "Expert" }
       ]
     },
     {
-      title: "Backend & Systems",
+      title: "Mobile App Development",
       skills: [
-        { name: "Node.js / Express / NestJS", level: "Expert" },
-        { name: "Python / FastAPI", level: "Advanced" },
-        { name: "GraphQL & REST APIs", level: "Expert" },
-        { name: "PostgreSQL & Prisma / Drizzle", level: "Expert" },
-        { name: "Redis & Caching Strategies", level: "Advanced" },
-        { name: "Microservices Architecture", level: "Advanced" }
+        { name: "React Native & Expo", level: "Expert" },
+        { name: "Cross-Platform (iOS & Android)", level: "Expert" },
+        { name: "Mobile UI/UX & Smooth Gestures", level: "Advanced" },
+        { name: "State Management & Offline Storage", level: "Advanced" },
+        { name: "Push Notifications & Device APIs", level: "Advanced" },
+        { name: "App Store & Play Store Deployment", level: "Intermediate" }
       ]
     },
     {
-      title: "DevOps & Cloud",
+      title: "Website Design",
       skills: [
-        { name: "Docker & Containerization", level: "Advanced" },
-        { name: "AWS (S3, Lambda, ECS, RDS)", level: "Advanced" },
-        { name: "CI/CD (GitHub Actions)", level: "Expert" },
-        { name: "Vercel & Edge Deployment", level: "Expert" },
-        { name: "Kubernetes & Terraform Basics", level: "Intermediate" },
-        { name: "Monitoring & OpenTelemetry", level: "Advanced" }
+        { name: "Figma UI/UX Prototyping", level: "Expert" },
+        { name: "Modern Glassmorphism & Micro-animations", level: "Expert" },
+        { name: "Design Systems & Component Libraries", level: "Advanced" },
+        { name: "Mobile-First Wireframing", level: "Expert" },
+        { name: "User Journey & Conversion Optimization", level: "Advanced" },
+        { name: "Brand Identity & Visual Hierarchy", level: "Advanced" }
       ]
     },
     {
-      title: "Emerging Tech & AI",
+      title: "Website Management",
       skills: [
-        { name: "OpenAI & Anthropic APIs", level: "Advanced" },
-        { name: "Vector Databases (Pinecone, pgvector)", level: "Advanced" },
-        { name: "RAG Pipeline Architecture", level: "Advanced" },
-        { name: "LangChain / AI SDK", level: "Advanced" },
-        { name: "WebSockets & Real-Time Sync", level: "Expert" }
+        { name: "Website Health & Uptime Monitoring", level: "Expert" },
+        { name: "Speed & SEO Optimization", level: "Expert" },
+        { name: "Domain, DNS & SSL Setup", level: "Advanced" },
+        { name: "Security Hardening & Backups", level: "Advanced" },
+        { name: "CMS Management (WordPress / Headless)", level: "Advanced" },
+        { name: "Content Updates & Bug Fixes", level: "Expert" }
       ]
     }
   ],
   projects: [
     {
-      id: "nexus-analytics",
-      title: "Nexus Enterprise Analytics",
-      tagline: "Real-time stream telemetry and predictive user intelligence dashboard.",
-      description: "An enterprise analytics suite processing over 50M daily events with sub-100ms dashboard queries, custom cohort filtering, and anomaly detection.",
-      longDescription: "Architected a high-throughput telemetry ingestion pipeline using Kafka, ClickHouse, and Next.js. Engineered an interactive charting canvas supporting 100k+ data points rendered at 60 FPS without UI jank. Integrated AI-driven pattern recognition for automated KPI alerts.",
-      category: "Full Stack",
-      tags: ["Next.js", "TypeScript", "ClickHouse", "Tailwind CSS", "WebSockets"],
-      metrics: "50M+ daily events processed",
-      liveUrl: "https://example.com/demo/nexus",
-      githubUrl: "https://github.com/example/nexus-analytics",
+      id: "apex-luxe-commerce",
+      title: "Apex Luxe E-Commerce Platform",
+      tagline: "High-converting modern web storefront built for speed and sales.",
+      description: "A fast, fully responsive e-commerce web application featuring instant catalog filtering, dynamic shopping cart, and seamless checkout.",
+      longDescription: "Engineered from the ground up using Next.js, React, and Tailwind CSS. Designed a bespoke modern dark/light aesthetic with micro-interactions that boosted customer session duration by 42%.",
+      category: "Web Development",
+      tags: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Stripe API"],
+      metrics: "99+ Lighthouse performance score",
+      liveUrl: "https://example.com/demo/apex-luxe",
+      githubUrl: "https://github.com/example/apex-luxe",
       featured: true,
       imageGradient: "from-blue-600 via-indigo-600 to-violet-700"
     },
     {
-      id: "hyperflow-ai",
-      title: "HyperFlow AI Workspace",
-      tagline: "Collaborative canvas for designing multi-agent AI automation workflows.",
-      description: "Visual node-based canvas for orchestrating autonomous agents, tool integrations, and human-in-the-loop decision checkpoints with live simulation.",
-      longDescription: "Built with React Flow and WebAssembly execution sandboxes. Allows developers and product teams to visually stitch together LLM prompts, database queries, and third-party APIs. Features live multiplayer collaboration via CRDTs.",
-      category: "AI / Machine Learning",
-      tags: ["React", "TypeScript", "LangChain", "FastAPI", "PostgreSQL"],
-      metrics: "12,000+ active flow builders",
-      liveUrl: "https://example.com/demo/hyperflow",
-      githubUrl: "https://github.com/example/hyperflow-ai",
+      id: "novafit-mobile-app",
+      title: "NovaFit Mobile Training App",
+      tagline: "Sleek iOS and Android workout tracker with interactive coaching.",
+      description: "A cross-platform mobile application providing guided workouts, real-time progress analytics, and custom routine builders.",
+      longDescription: "Built with React Native and Expo for both iOS and Android. Features fluid 60 FPS gesture animations, offline-first local database synchronization, and automated daily push reminder notifications.",
+      category: "Mobile Apps",
+      tags: ["React Native", "Expo", "TypeScript", "Mobile UI", "AsyncStorage"],
+      metrics: "4.9/5 user rating on app stores",
+      liveUrl: "https://example.com/demo/novafit",
+      githubUrl: "https://github.com/example/novafit",
       featured: true,
       imageGradient: "from-purple-600 via-pink-600 to-rose-600"
     },
     {
-      id: "vaultpay-gateway",
-      title: "VaultPay Global Payments",
-      tagline: "Zero-latency multi-currency settlement gateway with fraud detection.",
-      description: "Secure fintech payment orchestrator supporting localized checkout flows across 40+ currencies with 99.999% SLA reliability.",
-      longDescription: "Developed strict PCI-DSS compliant payment tokenization microservices. Engineered automated fallback routing between multiple banking acquirers, boosting checkout success rates by 14.3%.",
-      category: "Full Stack",
-      tags: ["Node.js", "PostgreSQL", "Redis", "Stripe API", "Docker"],
-      metrics: "99.999% reliability SLA",
-      liveUrl: "https://example.com/demo/vaultpay",
-      githubUrl: "https://github.com/example/vaultpay",
+      id: "omniflow-management",
+      title: "OmniFlow Multi-Site Management",
+      tagline: "Centralized dashboard for tracking client websites, uptime, and SEO.",
+      description: "Website management tool designed to monitor server health, automated daily backups, SSL expirations, and Core Web Vitals across multiple client domains.",
+      longDescription: "Created to streamline website maintenance workflows. Automated routine plugin updates, security scans, and database cleaning, saving over 15 hours of manual administration weekly.",
+      category: "Website Management",
+      tags: ["Next.js", "Node.js", "DNS & SSL", "SEO Tools", "Automated Backups"],
+      metrics: "99.98% monitored website uptime",
+      liveUrl: "https://example.com/demo/omniflow",
+      githubUrl: "https://github.com/example/omniflow",
       featured: true,
       imageGradient: "from-emerald-600 via-teal-600 to-cyan-700"
     },
     {
-      id: "aurora-design-system",
-      title: "Aurora Component Library",
-      tagline: "Accessible, themeable design system adopted across 8 multi-tenant apps.",
-      description: "Comprehensive React UI kit with 60+ headless components, automatic dark mode tokens, WCAG AAA compliance, and zero runtime CSS overhead.",
-      longDescription: "Created to unify branding across disparate company micro-frontends. Engineered complete keyboard navigation, automated visual regression test suites via Playwright, and documented interactive stories in Storybook.",
-      category: "Frontend",
-      tags: ["React", "Tailwind CSS", "Storybook", "TypeScript", "A11y"],
-      metrics: "60+ accessible components",
-      liveUrl: "https://example.com/demo/aurora",
-      githubUrl: "https://github.com/example/aurora-design",
+      id: "aura-design-system",
+      title: "Aura UI Design & Component Kit",
+      tagline: "Modern, clean design system crafted in Figma and implemented in React.",
+      description: "A complete visual identity and design system with 40+ reusable interactive components, custom iconography, and responsive layouts.",
+      longDescription: "Designed in Figma with strict 8pt grid alignment, custom typography hierarchy, and accessible color contrasts. Converted into pixel-perfect web components ready for rapid client deployments.",
+      category: "Website Design",
+      tags: ["Figma", "UI/UX", "Tailwind CSS", "Design System", "A11y"],
+      metrics: "40+ reusable responsive UI blocks",
+      liveUrl: "https://example.com/demo/aura-design",
+      githubUrl: "https://github.com/example/aura-design",
       featured: false,
       imageGradient: "from-amber-500 via-orange-600 to-red-600"
     },
     {
-      id: "cloudpulse-infra",
-      title: "CloudPulse Infrastructure Mesh",
-      tagline: "Automated Kubernetes cluster provisioning and cost-optimization operator.",
-      description: "Cloud-native Kubernetes operator that dynamically provisions spot instances and scales workloads based on traffic patterns, slashing AWS bills by 38%.",
-      longDescription: "Written in Go and integrated with Prometheus metrics. Predicts traffic surges using lightweight ARIMA time-series models and warms up serverless nodes in advance.",
-      category: "DevOps / Cloud",
-      tags: ["Go", "Kubernetes", "AWS", "Prometheus", "Terraform"],
-      metrics: "38% cloud cost reduction",
-      liveUrl: "https://example.com/demo/cloudpulse",
-      githubUrl: "https://github.com/example/cloudpulse",
+      id: "zenith-realestate",
+      title: "Zenith Real Estate & Property Portal",
+      tagline: "Dynamic property listings with interactive maps and lead capture.",
+      description: "A modern web portal for property agencies featuring instant search by location, price filter sliders, and integrated WhatsApp / email inquiry forms.",
+      longDescription: "Engineered with mobile-first responsiveness, ultra-fast image optimization via Next/Image, and frictionless inquiry forms that increased client lead conversion by 35%.",
+      category: "Web Development",
+      tags: ["React", "Next.js", "Interactive Maps", "Responsive Web", "SEO"],
+      metrics: "1.2s average page load speed",
+      liveUrl: "https://example.com/demo/zenith",
+      githubUrl: "https://github.com/example/zenith",
       featured: false,
       imageGradient: "from-cyan-600 via-blue-600 to-indigo-800"
     },
     {
-      id: "synthetix-voice",
-      title: "Synthetix Real-Time Voice Agent",
-      tagline: "Sub-250ms latency bidirectional conversational audio agent.",
-      description: "Next-generation voice assistant using WebRTC audio streaming, streaming speech-to-text, and low-latency voice synthesis for customer support automation.",
-      longDescription: "Utilizes WebSocket audio streaming pipelines connected directly to Whisper and ElevenLabs. Includes interruptibility detection, background noise suppression, and tool-calling execution mid-conversation.",
-      category: "AI / Machine Learning",
-      tags: ["WebRTC", "Next.js", "Python", "ElevenLabs", "FastAPI"],
-      metrics: "220ms median voice latency",
-      liveUrl: "https://example.com/demo/synthetix",
-      githubUrl: "https://github.com/example/synthetix-voice",
+      id: "quickbite-mobile",
+      title: "QuickBite Delivery Mobile App",
+      tagline: "On-demand food ordering app with live order tracking.",
+      description: "Cross-platform mobile application allowing users to browse restaurant menus, customize items, and track delivery status in real-time.",
+      longDescription: "Engineered using React Native with custom order status animations, cart persistence, and lightning-fast checkout flow.",
+      category: "Mobile Apps",
+      tags: ["React Native", "TypeScript", "REST APIs", "Mobile App", "Live Tracking"],
+      metrics: "Sub-second screen transition speeds",
+      liveUrl: "https://example.com/demo/quickbite",
+      githubUrl: "https://github.com/example/quickbite",
       featured: false,
       imageGradient: "from-fuchsia-600 via-purple-700 to-indigo-900"
     }
@@ -214,65 +215,65 @@ export const portfolioData: PortfolioData = {
   experiences: [
     {
       period: "2023 — Present",
-      role: "Lead Full-Stack Architect",
-      company: "Stratosphere Technologies",
-      location: "San Francisco, CA",
-      description: "Leading the core platform team building cloud infrastructure and high-traffic customer-facing web applications.",
+      role: "Lead Web & Mobile App Developer",
+      company: "Freelance & Remote Consulting",
+      location: "Türkiye (Remote Worldwide)",
+      description: "Delivering custom websites, cross-platform mobile apps, and ongoing website management for startups and international businesses.",
       highlights: [
-        "Spearheaded the migration of legacy monolithic frontend to Next.js App Router, improving Lighthouse performance scores from 54 to 98.",
-        "Architected real-time collaboration features using WebSockets and CRDTs, reducing server latency by 45%.",
-        "Mentored a team of 9 engineers across frontend, backend, and QA disciplines."
+        "Built and launched 9+ high-performance websites and mobile apps with 100% on-time delivery.",
+        "Managed ongoing website updates, security audits, and SEO improvements for client businesses.",
+        "Engineered smooth cross-platform mobile experiences on iOS and Android using React Native."
       ],
-      skills: ["Next.js", "TypeScript", "PostgreSQL", "AWS", "Turborepo"]
+      skills: ["Website Development", "Mobile Apps", "UI/UX Design", "Website Management", "Next.js"]
     },
     {
-      period: "2021 — 2023",
-      role: "Senior Frontend Engineer",
-      company: "Prism Dynamics",
-      location: "New York, NY (Remote)",
-      description: "Responsible for designing and delivering modular web applications for Fortune 500 financial clients.",
+      period: "2022 — 2023",
+      role: "Web Developer & UI/UX Designer",
+      company: "Creative Studio Solutions",
+      location: "Remote",
+      description: "Designed and developed responsive business websites, landing pages, and web applications.",
       highlights: [
-        "Built dynamic data visualization components capable of handling high-frequency live financial market feeds.",
-        "Created an internal design system that reduced front-end feature delivery time by 30%.",
-        "Implemented rigorous end-to-end testing with Playwright, catching over 120 regression issues pre-release."
+        "Crafted custom Figma prototypes and turned them into responsive web applications with rapid turnaround.",
+        "Optimized client websites to achieve sub-2 second load times and top Core Web Vitals rankings.",
+        "Collaborated directly with clients to translate their vision into engaging digital storefronts."
       ],
-      skills: ["React", "TypeScript", "Tailwind CSS", "GraphQL", "Jest"]
+      skills: ["React", "TypeScript", "Tailwind CSS", "Figma", "Responsive Web"]
     },
     {
-      period: "2019 — 2021",
-      role: "Full-Stack Developer",
-      company: "Vanguard Studio Labs",
-      location: "Austin, TX",
-      description: "Developed interactive web applications, client portals, and bespoke e-commerce experiences.",
+      period: "2021 — 2022",
+      role: "Web Designer & Management Specialist",
+      company: "Digital Horizon Labs",
+      location: "Remote",
+      description: "Handled front-end website implementations, domain setups, CMS updates, and website maintenance.",
       highlights: [
-        "Delivered 18 custom client web projects on schedule with zero critical production downtime.",
-        "Integrated multi-provider payment systems and automated shipping rate calculation APIs.",
-        "Optimized database indexing and queries, cutting page load times by half."
+        "Managed day-to-day website health, plugin updates, and troubleshooting for over 20 client web properties.",
+        "Redesigned legacy site pages with modern aesthetic layouts, increasing mobile visitor engagement.",
+        "Implemented on-page SEO structures, boosting search engine discovery."
       ],
-      skills: ["JavaScript", "Node.js", "React", "MongoDB", "Docker"]
+      skills: ["HTML5 / CSS3", "JavaScript", "Website Management", "SEO", "WordPress"]
     }
   ],
   testimonials: [
     {
-      name: "Elena Rostova",
-      role: "VP of Product",
-      company: "Stratosphere Technologies",
-      content: "Alex is that rare engineer who deeply cares about user delight as much as database indices and latency. Working with him elevated our entire engineering standard.",
-      avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80"
-    },
-    {
-      name: "David Chen",
-      role: "Engineering Director",
-      company: "Prism Dynamics",
-      content: "One of the sharpest engineers I have ever worked with. Alex took our fragmented frontend architecture and turned it into an ultra-fast, rock-solid product.",
+      name: "Marcus Vance",
+      role: "Founder & CEO",
+      company: "Vance Retail Group",
+      content: "Jason delivered our e-commerce web platform in what felt like the blink of an eye. The design is sleek, the website is blazingly fast, and his management of our site has been flawless.",
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80"
     },
     {
-      name: "Sarah Lindqvist",
-      role: "Principal Designer",
-      company: "DesignCore Studio",
-      content: "Alex has an incredible eye for detail. He translates complex Figma interactions into pixel-perfect, accessible code with buttery smooth 60fps animations.",
-      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80"
+      name: "Sophia Martinez",
+      role: "Product Lead",
+      company: "AppSphere Studios",
+      content: "Working with Jason on our mobile application was an absolute joy. He transformed our concept into a smooth, responsive app on both iOS and Android with remarkable speed.",
+      avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80"
+    },
+    {
+      name: "Liam O'Connor",
+      role: "Operations Director",
+      company: "Apex Media",
+      content: "Jason is our go-to expert for all website design and maintenance. Whenever we need new features or quick adjustments, he handles them immediately with top-tier professionalism.",
+      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80"
     }
   ]
 };

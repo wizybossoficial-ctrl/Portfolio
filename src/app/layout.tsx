@@ -22,12 +22,13 @@ export const metadata: Metadata = {
   title: `${portfolioData.personal.name} | ${portfolioData.personal.role}`,
   description: `${portfolioData.personal.bio}`,
   keywords: [
-    "Full Stack Engineer",
+    "Website Development",
+    "Mobile App Developer",
+    "Website Design",
+    "Website Management",
+    "React Native",
     "Next.js Developer",
-    "React Developer",
-    "TypeScript",
-    "Software Architecture",
-    "Web Portfolio"
+    "Jason Adelmo"
   ],
   authors: [{ name: portfolioData.personal.name }],
 };
